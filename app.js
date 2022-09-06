@@ -1,7 +1,7 @@
 let clickEvent =document.getElementById("clickEvent")
 let mouseoverEvent =document.getElementById("mouseoverEvent")
 let mouseoutEvent =document.getElementById("mouseoutEvent")
-let mouseOverColor =document.getElementById("mouseOverColor")
+let mouseLeaveColor =document.getElementById("mouseLeaveColor")
 let dblclickColor =document.getElementById("dblclickColor")
 
 
@@ -22,9 +22,9 @@ function changeTextMouseOut(){
 mouseoutEvent.addEventListener("mouseout", changeTextMouseOut)
 
 function changeTextColor(){
-	mouseOverColor.style.backgroundColor="#1fd166"
+	mouseLeaveColor.style.backgroundColor="#1fd166"
 }
-mouseOverColor.addEventListener("mouseover", changeTextColor)
+mouseLeaveColor.addEventListener("mouseleave", changeTextColor)
 
 function changedblClickColor(){
 	dblclickColor.style.color="#fafebd"
